@@ -1,6 +1,6 @@
 {
   "generators": {
-    "address": 3,
+    "address": 2,
     "nonce": 0
   },
   "auth": [
@@ -17,19 +17,6 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "string": "Test Product"
-                },
-                {
-                  "string": "Description"
-                },
-                {
-                  "string": "Origin"
-                },
-                {
-                  "string": "Category"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -70,59 +57,53 @@
           "function": {
             "contract_fn": {
               "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "add_authorized_actor",
+              "function_name": "add_tracking_event",
               "args": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 },
                 {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
-                }
-              ]
-            }
-          },
-          "sub_invocations": []
-        }
-      ]
-    ],
-    [
-      [
-        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
-        {
-          "function": {
-            "contract_fn": {
-              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "add_tracking_event",
-              "args": [
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                  "symbol": "HARVEST"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "symbol": "EVENT"
-                  "string": "COFFEE-ETH-001"
-                },
-                {
-                  "symbol": "PROCESS"
-                },
-                {
-                  "string": "Processing Mill"
+                  "string": "Yirgacheffe Farm"
                 },
                 {
                   "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
                 },
                 {
-                  "string": "Event Note"
-                  "string": "Washed and dried"
+                  "string": "Coffee harvested at peak ripeness"
                 },
                 {
-                  "map": []
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "batch"
+                      },
+                      "val": {
+                        "string": "B2024-001"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "humidity"
+                      },
+                      "val": {
+                        "string": "65"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "temperature"
+                      },
+                      "val": {
+                        "string": "22.5"
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -130,7 +111,6 @@
           "sub_invocations": []
         }
       ]
-    ]
     ],
     []
   ],
@@ -154,7 +134,6 @@
                   "symbol": "Auth"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -178,64 +157,10 @@
                       "symbol": "Auth"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     },
                     {
                       "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "bool": true
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
-                  "symbol": "Auth"
-                },
-                {
-                  "string": "PROD-01"
-                  "string": "COFFEE-ETH-001"
-                },
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "Auth"
-                    },
-                    {
-                      "string": "PROD-01"
-                      "string": "COFFEE-ETH-001"
-                    },
-                    {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                     }
                   ]
                 },
@@ -292,7 +217,7 @@
                         "symbol": "actor"
                       },
                       "val": {
-                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                       }
                     },
                     {
@@ -316,8 +241,7 @@
                         "symbol": "event_type"
                       },
                       "val": {
-                        "symbol": "EVENT"
-                        "symbol": "PROCESS"
+                        "symbol": "HARVEST"
                       }
                     },
                     {
@@ -325,7 +249,7 @@
                         "symbol": "location"
                       },
                       "val": {
-                        "string": "Processing Mill"
+                        "string": "Yirgacheffe Farm"
                       }
                     },
                     {
@@ -333,7 +257,32 @@
                         "symbol": "metadata"
                       },
                       "val": {
-                        "map": []
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "batch"
+                            },
+                            "val": {
+                              "string": "B2024-001"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "humidity"
+                            },
+                            "val": {
+                              "string": "65"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "temperature"
+                            },
+                            "val": {
+                              "string": "22.5"
+                            }
+                          }
+                        ]
                       }
                     },
                     {
@@ -341,8 +290,7 @@
                         "symbol": "note"
                       },
                       "val": {
-                        "string": "Event Note"
-                        "string": "Washed and dried"
+                        "string": "Coffee harvested at peak ripeness"
                       }
                     },
                     {
@@ -350,7 +298,6 @@
                         "symbol": "product_id"
                       },
                       "val": {
-                        "string": "PROD-01"
                         "string": "COFFEE-ETH-001"
                       }
                     },
@@ -417,17 +364,13 @@
             "key": {
               "vec": [
                 {
-                  "symbol": "Product"
-                },
-                {
-                  "string": "PROD-01"
                   "symbol": "EventTypeCount"
                 },
                 {
                   "string": "COFFEE-ETH-001"
                 },
                 {
-                  "symbol": "PROCESS"
+                  "symbol": "HARVEST"
                 }
               ]
             },
@@ -450,7 +393,7 @@
                       "string": "COFFEE-ETH-001"
                     },
                     {
-                      "symbol": "PROCESS"
+                      "symbol": "HARVEST"
                     }
                   ]
                 },
@@ -478,7 +421,7 @@
                   "string": "COFFEE-ETH-001"
                 },
                 {
-                  "symbol": "PROCESS"
+                  "symbol": "HARVEST"
                 },
                 {
                   "u64": 1
@@ -504,7 +447,7 @@
                       "string": "COFFEE-ETH-001"
                     },
                     {
-                      "symbol": "PROCESS"
+                      "symbol": "HARVEST"
                     },
                     {
                       "u64": 1
@@ -552,7 +495,6 @@
                       "symbol": "Product"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     }
                   ]
@@ -573,7 +515,6 @@
                         "symbol": "category"
                       },
                       "val": {
-                        "string": "Category"
                         "string": "Coffee"
                       }
                     },
@@ -606,7 +547,6 @@
                         "symbol": "description"
                       },
                       "val": {
-                        "string": "Description"
                         "string": "Premium single-origin coffee"
                       }
                     },
@@ -615,7 +555,6 @@
                         "symbol": "id"
                       },
                       "val": {
-                        "string": "PROD-01"
                         "string": "COFFEE-ETH-001"
                       }
                     },
@@ -632,7 +571,6 @@
                         "symbol": "name"
                       },
                       "val": {
-                        "string": "Test Product"
                         "string": "Organic Coffee Beans"
                       }
                     },
@@ -647,7 +585,6 @@
                               "symbol": "location"
                             },
                             "val": {
-                              "string": "Origin"
                               "string": "Yirgacheffe, Ethiopia"
                             }
                           }
@@ -689,7 +626,6 @@
                   "symbol": "ProductEventIds"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 }
               ]
@@ -710,7 +646,6 @@
                       "symbol": "ProductEventIds"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     }
                   ]
@@ -830,39 +765,6 @@
       ],
       [
         {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
-            "key": {
-              "ledger_key_nonce": {
-                "nonce": 1033654523790656264
-              }
-            },
-            "durability": "temporary"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
-                "key": {
-                  "ledger_key_nonce": {
-                    "nonce": 1033654523790656264
-                  }
-                },
-                "durability": "temporary",
-                "val": "void"
-              }
-            },
-            "ext": "v0"
-          },
-          15
-        ]
-      ],
-      [
-        {
           "contract_code": {
             "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
           }
@@ -909,19 +811,6 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "string": "Test Product"
-                },
-                {
-                  "string": "Description"
-                },
-                {
-                  "string": "Origin"
-                },
-                {
-                  "string": "Category"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -1099,7 +988,6 @@
                 "symbol": "register_product"
               }
             ],
-            "data": "void"
             "data": {
               "map": [
                 {
@@ -1229,7 +1117,7 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "add_authorized_actor"
+                "symbol": "add_tracking_event"
               }
             ],
             "data": {
@@ -1238,85 +1126,47 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 },
                 {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_return"
-              },
-              {
-                "symbol": "add_authorized_actor"
-              }
-            ],
-            "data": "void"
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_call"
-              },
-              {
-                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
-              },
-              {
-                "symbol": "add_tracking_event"
-              }
-            ],
-            "data": {
-              "vec": [
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                  "symbol": "HARVEST"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "symbol": "EVENT"
-                  "string": "COFFEE-ETH-001"
-                },
-                {
-                  "symbol": "PROCESS"
-                },
-                {
-                  "string": "Processing Mill"
+                  "string": "Yirgacheffe Farm"
                 },
                 {
                   "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
                 },
                 {
-                  "string": "Event Note"
-                  "string": "Washed and dried"
+                  "string": "Coffee harvested at peak ripeness"
                 },
                 {
-                  "map": []
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "batch"
+                      },
+                      "val": {
+                        "string": "B2024-001"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "humidity"
+                      },
+                      "val": {
+                        "string": "65"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "temperature"
+                      },
+                      "val": {
+                        "string": "22.5"
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -1350,7 +1200,7 @@
                     "symbol": "actor"
                   },
                   "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                   }
                 },
                 {
@@ -1374,7 +1224,7 @@
                     "symbol": "event_type"
                   },
                   "val": {
-                    "symbol": "PROCESS"
+                    "symbol": "HARVEST"
                   }
                 },
                 {
@@ -1382,7 +1232,7 @@
                     "symbol": "location"
                   },
                   "val": {
-                    "string": "Processing Mill"
+                    "string": "Yirgacheffe Farm"
                   }
                 },
                 {
@@ -1390,7 +1240,32 @@
                     "symbol": "metadata"
                   },
                   "val": {
-                    "map": []
+                    "map": [
+                      {
+                        "key": {
+                          "symbol": "batch"
+                        },
+                        "val": {
+                          "string": "B2024-001"
+                        }
+                      },
+                      {
+                        "key": {
+                          "symbol": "humidity"
+                        },
+                        "val": {
+                          "string": "65"
+                        }
+                      },
+                      {
+                        "key": {
+                          "symbol": "temperature"
+                        },
+                        "val": {
+                          "string": "22.5"
+                        }
+                      }
+                    ]
                   }
                 },
                 {
@@ -1398,7 +1273,7 @@
                     "symbol": "note"
                   },
                   "val": {
-                    "string": "Washed and dried"
+                    "string": "Coffee harvested at peak ripeness"
                   }
                 },
                 {
@@ -1495,7 +1370,7 @@
                     "symbol": "actor"
                   },
                   "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                   }
                 },
                 {
@@ -1519,7 +1394,7 @@
                     "symbol": "event_type"
                   },
                   "val": {
-                    "symbol": "PROCESS"
+                    "symbol": "HARVEST"
                   }
                 },
                 {
@@ -1527,7 +1402,7 @@
                     "symbol": "location"
                   },
                   "val": {
-                    "string": "Processing Mill"
+                    "string": "Yirgacheffe Farm"
                   }
                 },
                 {
@@ -1535,7 +1410,32 @@
                     "symbol": "metadata"
                   },
                   "val": {
-                    "map": []
+                    "map": [
+                      {
+                        "key": {
+                          "symbol": "batch"
+                        },
+                        "val": {
+                          "string": "B2024-001"
+                        }
+                      },
+                      {
+                        "key": {
+                          "symbol": "humidity"
+                        },
+                        "val": {
+                          "string": "65"
+                        }
+                      },
+                      {
+                        "key": {
+                          "symbol": "temperature"
+                        },
+                        "val": {
+                          "string": "22.5"
+                        }
+                      }
+                    ]
                   }
                 },
                 {
@@ -1543,7 +1443,7 @@
                     "symbol": "note"
                   },
                   "val": {
-                    "string": "Washed and dried"
+                    "string": "Coffee harvested at peak ripeness"
                   }
                 },
                 {

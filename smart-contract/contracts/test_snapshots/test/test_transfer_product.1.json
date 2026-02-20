@@ -17,19 +17,6 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "string": "Test Product"
-                },
-                {
-                  "string": "Description"
-                },
-                {
-                  "string": "Origin"
-                },
-                {
-                  "string": "Category"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -70,13 +57,12 @@
           "function": {
             "contract_fn": {
               "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "add_authorized_actor",
+              "function_name": "transfer_product",
               "args": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -87,42 +73,23 @@
           },
           "sub_invocations": []
         }
-      ]
-    ],
-    [
+      ],
       [
         "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
         {
           "function": {
             "contract_fn": {
               "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "add_tracking_event",
+              "function_name": "transfer_product",
               "args": [
                 {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "symbol": "EVENT"
                   "string": "COFFEE-ETH-001"
                 },
                 {
-                  "symbol": "PROCESS"
-                },
-                {
-                  "string": "Processing Mill"
-                },
-                {
-                  "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
-                },
-                {
-                  "string": "Event Note"
-                  "string": "Washed and dried"
-                },
-                {
-                  "map": []
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                 }
               ]
             }
@@ -130,7 +97,6 @@
           "sub_invocations": []
         }
       ]
-    ]
     ],
     []
   ],
@@ -154,60 +120,6 @@
                   "symbol": "Auth"
                 },
                 {
-                  "string": "PROD-01"
-                  "string": "COFFEE-ETH-001"
-                },
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "Auth"
-                    },
-                    {
-                      "string": "PROD-01"
-                      "string": "COFFEE-ETH-001"
-                    },
-                    {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "bool": true
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
-                  "symbol": "Auth"
-                },
-                {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -231,7 +143,6 @@
                       "symbol": "Auth"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     },
                     {
@@ -242,278 +153,6 @@
                 "durability": "persistent",
                 "val": {
                   "bool": true
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
-                  "symbol": "Event"
-                },
-                {
-                  "u64": 1
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "Event"
-                    },
-                    {
-                      "u64": 1
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "map": [
-                    {
-                      "key": {
-                        "symbol": "actor"
-                      },
-                      "val": {
-                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "data_hash"
-                      },
-                      "val": {
-                        "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "event_id"
-                      },
-                      "val": {
-                        "u64": 1
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "event_type"
-                      },
-                      "val": {
-                        "symbol": "EVENT"
-                        "symbol": "PROCESS"
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "location"
-                      },
-                      "val": {
-                        "string": "Processing Mill"
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "metadata"
-                      },
-                      "val": {
-                        "map": []
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "note"
-                      },
-                      "val": {
-                        "string": "Event Note"
-                        "string": "Washed and dried"
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "product_id"
-                      },
-                      "val": {
-                        "string": "PROD-01"
-                        "string": "COFFEE-ETH-001"
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "timestamp"
-                      },
-                      "val": {
-                        "u64": 0
-                      }
-                    }
-                  ]
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
-                  "symbol": "EventSeq"
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "EventSeq"
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "u64": 1
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
-                  "symbol": "Product"
-                },
-                {
-                  "string": "PROD-01"
-                  "symbol": "EventTypeCount"
-                },
-                {
-                  "string": "COFFEE-ETH-001"
-                },
-                {
-                  "symbol": "PROCESS"
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "EventTypeCount"
-                    },
-                    {
-                      "string": "COFFEE-ETH-001"
-                    },
-                    {
-                      "symbol": "PROCESS"
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "u64": 1
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
-                  "symbol": "EventTypeIndex"
-                },
-                {
-                  "string": "COFFEE-ETH-001"
-                },
-                {
-                  "symbol": "PROCESS"
-                },
-                {
-                  "u64": 1
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "EventTypeIndex"
-                    },
-                    {
-                      "string": "COFFEE-ETH-001"
-                    },
-                    {
-                      "symbol": "PROCESS"
-                    },
-                    {
-                      "u64": 1
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "u64": 1
                 }
               }
             },
@@ -552,7 +191,6 @@
                       "symbol": "Product"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     }
                   ]
@@ -573,7 +211,6 @@
                         "symbol": "category"
                       },
                       "val": {
-                        "string": "Category"
                         "string": "Coffee"
                       }
                     },
@@ -606,7 +243,6 @@
                         "symbol": "description"
                       },
                       "val": {
-                        "string": "Description"
                         "string": "Premium single-origin coffee"
                       }
                     },
@@ -615,7 +251,6 @@
                         "symbol": "id"
                       },
                       "val": {
-                        "string": "PROD-01"
                         "string": "COFFEE-ETH-001"
                       }
                     },
@@ -632,7 +267,6 @@
                         "symbol": "name"
                       },
                       "val": {
-                        "string": "Test Product"
                         "string": "Organic Coffee Beans"
                       }
                     },
@@ -647,7 +281,6 @@
                               "symbol": "location"
                             },
                             "val": {
-                              "string": "Origin"
                               "string": "Yirgacheffe, Ethiopia"
                             }
                           }
@@ -659,7 +292,7 @@
                         "symbol": "owner"
                       },
                       "val": {
-                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                       }
                     },
                     {
@@ -689,7 +322,6 @@
                   "symbol": "ProductEventIds"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 }
               ]
@@ -710,18 +342,13 @@
                       "symbol": "ProductEventIds"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     }
                   ]
                 },
                 "durability": "persistent",
                 "val": {
-                  "vec": [
-                    {
-                      "u64": 1
-                    }
-                  ]
+                  "vec": []
                 }
               }
             },
@@ -909,19 +536,6 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "string": "Test Product"
-                },
-                {
-                  "string": "Description"
-                },
-                {
-                  "string": "Origin"
-                },
-                {
-                  "string": "Category"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -1099,7 +713,6 @@
                 "symbol": "register_product"
               }
             ],
-            "data": "void"
             "data": {
               "map": [
                 {
@@ -1229,7 +842,7 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "add_authorized_actor"
+                "symbol": "transfer_product"
               }
             ],
             "data": {
@@ -1238,7 +851,6 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -1263,7 +875,7 @@
                 "symbol": "fn_return"
               },
               {
-                "symbol": "add_authorized_actor"
+                "symbol": "transfer_product"
               }
             ],
             "data": "void"
@@ -1287,137 +899,11 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "add_tracking_event"
+                "symbol": "get_product"
               }
             ],
             "data": {
-              "vec": [
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
-                },
-                {
-                  "string": "PROD-01"
-                },
-                {
-                  "symbol": "EVENT"
-                  "string": "COFFEE-ETH-001"
-                },
-                {
-                  "symbol": "PROCESS"
-                },
-                {
-                  "string": "Processing Mill"
-                },
-                {
-                  "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
-                },
-                {
-                  "string": "Event Note"
-                  "string": "Washed and dried"
-                },
-                {
-                  "map": []
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "contract",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "tracking_event"
-              },
-              {
-                "string": "COFFEE-ETH-001"
-              },
-              {
-                "u64": 1
-              }
-            ],
-            "data": {
-              "map": [
-                {
-                  "key": {
-                    "symbol": "actor"
-                  },
-                  "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "data_hash"
-                  },
-                  "val": {
-                    "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "event_id"
-                  },
-                  "val": {
-                    "u64": 1
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "event_type"
-                  },
-                  "val": {
-                    "symbol": "PROCESS"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "location"
-                  },
-                  "val": {
-                    "string": "Processing Mill"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "metadata"
-                  },
-                  "val": {
-                    "map": []
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "note"
-                  },
-                  "val": {
-                    "string": "Washed and dried"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "product_id"
-                  },
-                  "val": {
-                    "string": "COFFEE-ETH-001"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "timestamp"
-                  },
-                  "val": {
-                    "u64": 0
-                  }
-                }
-              ]
+              "string": "COFFEE-ETH-001"
             }
           }
         }
@@ -1436,103 +922,46 @@
                 "symbol": "fn_return"
               },
               {
-                "symbol": "add_tracking_event"
-              }
-            ],
-            "data": {
-              "u64": 1
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_call"
-              },
-              {
-                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
-              },
-              {
-                "symbol": "get_event"
-              }
-            ],
-            "data": {
-              "u64": 1
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_return"
-              },
-              {
-                "symbol": "get_event"
+                "symbol": "get_product"
               }
             ],
             "data": {
               "map": [
                 {
                   "key": {
-                    "symbol": "actor"
+                    "symbol": "active"
                   },
                   "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                    "bool": true
                   }
                 },
                 {
                   "key": {
-                    "symbol": "data_hash"
+                    "symbol": "category"
                   },
                   "val": {
-                    "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                    "string": "Coffee"
                   }
                 },
                 {
                   "key": {
-                    "symbol": "event_id"
+                    "symbol": "certifications"
                   },
                   "val": {
-                    "u64": 1
+                    "vec": []
                   }
                 },
                 {
                   "key": {
-                    "symbol": "event_type"
+                    "symbol": "created_at"
                   },
                   "val": {
-                    "symbol": "PROCESS"
+                    "u64": 0
                   }
                 },
                 {
                   "key": {
-                    "symbol": "location"
-                  },
-                  "val": {
-                    "string": "Processing Mill"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "metadata"
+                    "symbol": "custom"
                   },
                   "val": {
                     "map": []
@@ -1540,15 +969,15 @@
                 },
                 {
                   "key": {
-                    "symbol": "note"
+                    "symbol": "description"
                   },
                   "val": {
-                    "string": "Washed and dried"
+                    "string": "Premium single-origin coffee"
                   }
                 },
                 {
                   "key": {
-                    "symbol": "product_id"
+                    "symbol": "id"
                   },
                   "val": {
                     "string": "COFFEE-ETH-001"
@@ -1556,10 +985,51 @@
                 },
                 {
                   "key": {
-                    "symbol": "timestamp"
+                    "symbol": "media_hashes"
                   },
                   "val": {
-                    "u64": 0
+                    "vec": []
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "name"
+                  },
+                  "val": {
+                    "string": "Organic Coffee Beans"
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "origin"
+                  },
+                  "val": {
+                    "map": [
+                      {
+                        "key": {
+                          "symbol": "location"
+                        },
+                        "val": {
+                          "string": "Yirgacheffe, Ethiopia"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "owner"
+                  },
+                  "val": {
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "tags"
+                  },
+                  "val": {
+                    "vec": []
                   }
                 }
               ]

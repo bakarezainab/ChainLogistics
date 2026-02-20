@@ -1,6 +1,6 @@
 {
   "generators": {
-    "address": 3,
+    "address": 2,
     "nonce": 0
   },
   "auth": [
@@ -17,19 +17,6 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "string": "Test Product"
-                },
-                {
-                  "string": "Description"
-                },
-                {
-                  "string": "Origin"
-                },
-                {
-                  "string": "Category"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -70,56 +57,25 @@
           "function": {
             "contract_fn": {
               "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "add_authorized_actor",
+              "function_name": "add_tracking_event",
               "args": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 },
                 {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
-                }
-              ]
-            }
-          },
-          "sub_invocations": []
-        }
-      ]
-    ],
-    [
-      [
-        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
-        {
-          "function": {
-            "contract_fn": {
-              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "add_tracking_event",
-              "args": [
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                  "symbol": "HARVEST"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "symbol": "EVENT"
-                  "string": "COFFEE-ETH-001"
-                },
-                {
-                  "symbol": "PROCESS"
-                },
-                {
-                  "string": "Processing Mill"
+                  "string": "Farm A"
                 },
                 {
                   "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
                 },
                 {
-                  "string": "Event Note"
-                  "string": "Washed and dried"
+                  "string": ""
                 },
                 {
                   "map": []
@@ -130,8 +86,82 @@
           "sub_invocations": []
         }
       ]
-    ]
     ],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+              "function_name": "add_tracking_event",
+              "args": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "string": "COFFEE-ETH-001"
+                },
+                {
+                  "symbol": "HARVEST"
+                },
+                {
+                  "string": "Farm B"
+                },
+                {
+                  "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                },
+                {
+                  "string": ""
+                },
+                {
+                  "map": []
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+              "function_name": "add_tracking_event",
+              "args": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "string": "COFFEE-ETH-001"
+                },
+                {
+                  "symbol": "PROCESS"
+                },
+                {
+                  "string": "Mill"
+                },
+                {
+                  "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                },
+                {
+                  "string": ""
+                },
+                {
+                  "map": []
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [],
     []
   ],
   "ledger": {
@@ -154,7 +184,6 @@
                   "symbol": "Auth"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -178,64 +207,10 @@
                       "symbol": "Auth"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     },
                     {
                       "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "bool": true
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
-                  "symbol": "Auth"
-                },
-                {
-                  "string": "PROD-01"
-                  "string": "COFFEE-ETH-001"
-                },
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "Auth"
-                    },
-                    {
-                      "string": "PROD-01"
-                      "string": "COFFEE-ETH-001"
-                    },
-                    {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                     }
                   ]
                 },
@@ -292,7 +267,7 @@
                         "symbol": "actor"
                       },
                       "val": {
-                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                       }
                     },
                     {
@@ -316,8 +291,7 @@
                         "symbol": "event_type"
                       },
                       "val": {
-                        "symbol": "EVENT"
-                        "symbol": "PROCESS"
+                        "symbol": "HARVEST"
                       }
                     },
                     {
@@ -325,7 +299,7 @@
                         "symbol": "location"
                       },
                       "val": {
-                        "string": "Processing Mill"
+                        "string": "Farm A"
                       }
                     },
                     {
@@ -341,8 +315,7 @@
                         "symbol": "note"
                       },
                       "val": {
-                        "string": "Event Note"
-                        "string": "Washed and dried"
+                        "string": ""
                       }
                     },
                     {
@@ -350,7 +323,242 @@
                         "symbol": "product_id"
                       },
                       "val": {
-                        "string": "PROD-01"
+                        "string": "COFFEE-ETH-001"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "timestamp"
+                      },
+                      "val": {
+                        "u64": 0
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "Event"
+                },
+                {
+                  "u64": 2
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "Event"
+                    },
+                    {
+                      "u64": 2
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "actor"
+                      },
+                      "val": {
+                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "data_hash"
+                      },
+                      "val": {
+                        "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "event_id"
+                      },
+                      "val": {
+                        "u64": 2
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "event_type"
+                      },
+                      "val": {
+                        "symbol": "HARVEST"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "location"
+                      },
+                      "val": {
+                        "string": "Farm B"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "metadata"
+                      },
+                      "val": {
+                        "map": []
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "note"
+                      },
+                      "val": {
+                        "string": ""
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "product_id"
+                      },
+                      "val": {
+                        "string": "COFFEE-ETH-001"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "timestamp"
+                      },
+                      "val": {
+                        "u64": 0
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "Event"
+                },
+                {
+                  "u64": 3
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "Event"
+                    },
+                    {
+                      "u64": 3
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "actor"
+                      },
+                      "val": {
+                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "data_hash"
+                      },
+                      "val": {
+                        "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "event_id"
+                      },
+                      "val": {
+                        "u64": 3
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "event_type"
+                      },
+                      "val": {
+                        "symbol": "PROCESS"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "location"
+                      },
+                      "val": {
+                        "string": "Mill"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "metadata"
+                      },
+                      "val": {
+                        "map": []
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "note"
+                      },
+                      "val": {
+                        "string": ""
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "product_id"
+                      },
+                      "val": {
                         "string": "COFFEE-ETH-001"
                       }
                     },
@@ -401,7 +609,7 @@
                 },
                 "durability": "persistent",
                 "val": {
-                  "u64": 1
+                  "u64": 3
                 }
               }
             },
@@ -417,10 +625,57 @@
             "key": {
               "vec": [
                 {
-                  "symbol": "Product"
+                  "symbol": "EventTypeCount"
                 },
                 {
-                  "string": "PROD-01"
+                  "string": "COFFEE-ETH-001"
+                },
+                {
+                  "symbol": "HARVEST"
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "EventTypeCount"
+                    },
+                    {
+                      "string": "COFFEE-ETH-001"
+                    },
+                    {
+                      "symbol": "HARVEST"
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "u64": 2
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
                   "symbol": "EventTypeCount"
                 },
                 {
@@ -478,6 +733,120 @@
                   "string": "COFFEE-ETH-001"
                 },
                 {
+                  "symbol": "HARVEST"
+                },
+                {
+                  "u64": 1
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "EventTypeIndex"
+                    },
+                    {
+                      "string": "COFFEE-ETH-001"
+                    },
+                    {
+                      "symbol": "HARVEST"
+                    },
+                    {
+                      "u64": 1
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "u64": 1
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "EventTypeIndex"
+                },
+                {
+                  "string": "COFFEE-ETH-001"
+                },
+                {
+                  "symbol": "HARVEST"
+                },
+                {
+                  "u64": 2
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "EventTypeIndex"
+                    },
+                    {
+                      "string": "COFFEE-ETH-001"
+                    },
+                    {
+                      "symbol": "HARVEST"
+                    },
+                    {
+                      "u64": 2
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "u64": 2
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "EventTypeIndex"
+                },
+                {
+                  "string": "COFFEE-ETH-001"
+                },
+                {
                   "symbol": "PROCESS"
                 },
                 {
@@ -513,7 +882,7 @@
                 },
                 "durability": "persistent",
                 "val": {
-                  "u64": 1
+                  "u64": 3
                 }
               }
             },
@@ -552,7 +921,6 @@
                       "symbol": "Product"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     }
                   ]
@@ -573,7 +941,6 @@
                         "symbol": "category"
                       },
                       "val": {
-                        "string": "Category"
                         "string": "Coffee"
                       }
                     },
@@ -606,7 +973,6 @@
                         "symbol": "description"
                       },
                       "val": {
-                        "string": "Description"
                         "string": "Premium single-origin coffee"
                       }
                     },
@@ -615,7 +981,6 @@
                         "symbol": "id"
                       },
                       "val": {
-                        "string": "PROD-01"
                         "string": "COFFEE-ETH-001"
                       }
                     },
@@ -632,7 +997,6 @@
                         "symbol": "name"
                       },
                       "val": {
-                        "string": "Test Product"
                         "string": "Organic Coffee Beans"
                       }
                     },
@@ -647,7 +1011,6 @@
                               "symbol": "location"
                             },
                             "val": {
-                              "string": "Origin"
                               "string": "Yirgacheffe, Ethiopia"
                             }
                           }
@@ -689,7 +1052,6 @@
                   "symbol": "ProductEventIds"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 }
               ]
@@ -710,7 +1072,6 @@
                       "symbol": "ProductEventIds"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     }
                   ]
@@ -720,6 +1081,12 @@
                   "vec": [
                     {
                       "u64": 1
+                    },
+                    {
+                      "u64": 2
+                    },
+                    {
+                      "u64": 3
                     }
                   ]
                 }
@@ -801,6 +1168,72 @@
             "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
             "key": {
               "ledger_key_nonce": {
+                "nonce": 1033654523790656264
+              }
+            },
+            "durability": "temporary"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+                "key": {
+                  "ledger_key_nonce": {
+                    "nonce": 1033654523790656264
+                  }
+                },
+                "durability": "temporary",
+                "val": "void"
+              }
+            },
+            "ext": "v0"
+          },
+          15
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+            "key": {
+              "ledger_key_nonce": {
+                "nonce": 4837995959683129791
+              }
+            },
+            "durability": "temporary"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+                "key": {
+                  "ledger_key_nonce": {
+                    "nonce": 4837995959683129791
+                  }
+                },
+                "durability": "temporary",
+                "val": "void"
+              }
+            },
+            "ext": "v0"
+          },
+          15
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+            "key": {
+              "ledger_key_nonce": {
                 "nonce": 5541220902715666415
               }
             },
@@ -817,39 +1250,6 @@
                 "key": {
                   "ledger_key_nonce": {
                     "nonce": 5541220902715666415
-                  }
-                },
-                "durability": "temporary",
-                "val": "void"
-              }
-            },
-            "ext": "v0"
-          },
-          15
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
-            "key": {
-              "ledger_key_nonce": {
-                "nonce": 1033654523790656264
-              }
-            },
-            "durability": "temporary"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
-                "key": {
-                  "ledger_key_nonce": {
-                    "nonce": 1033654523790656264
                   }
                 },
                 "durability": "temporary",
@@ -909,19 +1309,6 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "string": "Test Product"
-                },
-                {
-                  "string": "Description"
-                },
-                {
-                  "string": "Origin"
-                },
-                {
-                  "string": "Category"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -1099,7 +1486,6 @@
                 "symbol": "register_product"
               }
             ],
-            "data": "void"
             "data": {
               "map": [
                 {
@@ -1229,7 +1615,7 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "add_authorized_actor"
+                "symbol": "add_tracking_event"
               }
             ],
             "data": {
@@ -1238,82 +1624,19 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 },
                 {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_return"
-              },
-              {
-                "symbol": "add_authorized_actor"
-              }
-            ],
-            "data": "void"
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_call"
-              },
-              {
-                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
-              },
-              {
-                "symbol": "add_tracking_event"
-              }
-            ],
-            "data": {
-              "vec": [
-                {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                  "symbol": "HARVEST"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "symbol": "EVENT"
-                  "string": "COFFEE-ETH-001"
-                },
-                {
-                  "symbol": "PROCESS"
-                },
-                {
-                  "string": "Processing Mill"
+                  "string": "Farm A"
                 },
                 {
                   "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
                 },
                 {
-                  "string": "Event Note"
-                  "string": "Washed and dried"
+                  "string": ""
                 },
                 {
                   "map": []
@@ -1350,7 +1673,7 @@
                     "symbol": "actor"
                   },
                   "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                   }
                 },
                 {
@@ -1374,7 +1697,7 @@
                     "symbol": "event_type"
                   },
                   "val": {
-                    "symbol": "PROCESS"
+                    "symbol": "HARVEST"
                   }
                 },
                 {
@@ -1382,7 +1705,7 @@
                     "symbol": "location"
                   },
                   "val": {
-                    "string": "Processing Mill"
+                    "string": "Farm A"
                   }
                 },
                 {
@@ -1398,7 +1721,7 @@
                     "symbol": "note"
                   },
                   "val": {
-                    "string": "Washed and dried"
+                    "string": ""
                   }
                 },
                 {
@@ -1462,11 +1785,132 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "get_event"
+                "symbol": "add_tracking_event"
               }
             ],
             "data": {
-              "u64": 1
+              "vec": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "string": "COFFEE-ETH-001"
+                },
+                {
+                  "symbol": "HARVEST"
+                },
+                {
+                  "string": "Farm B"
+                },
+                {
+                  "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                },
+                {
+                  "string": ""
+                },
+                {
+                  "map": []
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "tracking_event"
+              },
+              {
+                "string": "COFFEE-ETH-001"
+              },
+              {
+                "u64": 2
+              }
+            ],
+            "data": {
+              "map": [
+                {
+                  "key": {
+                    "symbol": "actor"
+                  },
+                  "val": {
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "data_hash"
+                  },
+                  "val": {
+                    "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "event_id"
+                  },
+                  "val": {
+                    "u64": 2
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "event_type"
+                  },
+                  "val": {
+                    "symbol": "HARVEST"
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "location"
+                  },
+                  "val": {
+                    "string": "Farm B"
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "metadata"
+                  },
+                  "val": {
+                    "map": []
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "note"
+                  },
+                  "val": {
+                    "string": ""
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "product_id"
+                  },
+                  "val": {
+                    "string": "COFFEE-ETH-001"
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "timestamp"
+                  },
+                  "val": {
+                    "u64": 0
+                  }
+                }
+              ]
             }
           }
         }
@@ -1485,7 +1929,81 @@
                 "symbol": "fn_return"
               },
               {
-                "symbol": "get_event"
+                "symbol": "add_tracking_event"
+              }
+            ],
+            "data": {
+              "u64": 2
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "add_tracking_event"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "string": "COFFEE-ETH-001"
+                },
+                {
+                  "symbol": "PROCESS"
+                },
+                {
+                  "string": "Mill"
+                },
+                {
+                  "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                },
+                {
+                  "string": ""
+                },
+                {
+                  "map": []
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "tracking_event"
+              },
+              {
+                "string": "COFFEE-ETH-001"
+              },
+              {
+                "u64": 3
               }
             ],
             "data": {
@@ -1495,7 +2013,7 @@
                     "symbol": "actor"
                   },
                   "val": {
-                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                   }
                 },
                 {
@@ -1511,7 +2029,7 @@
                     "symbol": "event_id"
                   },
                   "val": {
-                    "u64": 1
+                    "u64": 3
                   }
                 },
                 {
@@ -1527,7 +2045,7 @@
                     "symbol": "location"
                   },
                   "val": {
-                    "string": "Processing Mill"
+                    "string": "Mill"
                   }
                 },
                 {
@@ -1543,7 +2061,7 @@
                     "symbol": "note"
                   },
                   "val": {
-                    "string": "Washed and dried"
+                    "string": ""
                   }
                 },
                 {
@@ -1560,6 +2078,499 @@
                   },
                   "val": {
                     "u64": 0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "add_tracking_event"
+              }
+            ],
+            "data": {
+              "u64": 3
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "get_filtered_events"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "string": "COFFEE-ETH-001"
+                },
+                {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "end_time"
+                      },
+                      "val": {
+                        "u64": 18446744073709551615
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "event_type"
+                      },
+                      "val": {
+                        "symbol": ""
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "location"
+                      },
+                      "val": {
+                        "string": "Farm A"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "start_time"
+                      },
+                      "val": {
+                        "u64": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "u64": 0
+                },
+                {
+                  "u64": 10
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "get_filtered_events"
+              }
+            ],
+            "data": {
+              "map": [
+                {
+                  "key": {
+                    "symbol": "events"
+                  },
+                  "val": {
+                    "vec": [
+                      {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "actor"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "data_hash"
+                            },
+                            "val": {
+                              "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "event_id"
+                            },
+                            "val": {
+                              "u64": 1
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "event_type"
+                            },
+                            "val": {
+                              "symbol": "HARVEST"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "location"
+                            },
+                            "val": {
+                              "string": "Farm A"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "metadata"
+                            },
+                            "val": {
+                              "map": []
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "note"
+                            },
+                            "val": {
+                              "string": ""
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "product_id"
+                            },
+                            "val": {
+                              "string": "COFFEE-ETH-001"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "timestamp"
+                            },
+                            "val": {
+                              "u64": 0
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "has_more"
+                  },
+                  "val": {
+                    "bool": false
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "total_count"
+                  },
+                  "val": {
+                    "u64": 1
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "get_filtered_events"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "string": "COFFEE-ETH-001"
+                },
+                {
+                  "map": [
+                    {
+                      "key": {
+                        "symbol": "end_time"
+                      },
+                      "val": {
+                        "u64": 18446744073709551615
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "event_type"
+                      },
+                      "val": {
+                        "symbol": "HARVEST"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "location"
+                      },
+                      "val": {
+                        "string": ""
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "start_time"
+                      },
+                      "val": {
+                        "u64": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "u64": 0
+                },
+                {
+                  "u64": 10
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "get_filtered_events"
+              }
+            ],
+            "data": {
+              "map": [
+                {
+                  "key": {
+                    "symbol": "events"
+                  },
+                  "val": {
+                    "vec": [
+                      {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "actor"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "data_hash"
+                            },
+                            "val": {
+                              "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "event_id"
+                            },
+                            "val": {
+                              "u64": 1
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "event_type"
+                            },
+                            "val": {
+                              "symbol": "HARVEST"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "location"
+                            },
+                            "val": {
+                              "string": "Farm A"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "metadata"
+                            },
+                            "val": {
+                              "map": []
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "note"
+                            },
+                            "val": {
+                              "string": ""
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "product_id"
+                            },
+                            "val": {
+                              "string": "COFFEE-ETH-001"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "timestamp"
+                            },
+                            "val": {
+                              "u64": 0
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "actor"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "data_hash"
+                            },
+                            "val": {
+                              "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "event_id"
+                            },
+                            "val": {
+                              "u64": 2
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "event_type"
+                            },
+                            "val": {
+                              "symbol": "HARVEST"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "location"
+                            },
+                            "val": {
+                              "string": "Farm B"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "metadata"
+                            },
+                            "val": {
+                              "map": []
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "note"
+                            },
+                            "val": {
+                              "string": ""
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "product_id"
+                            },
+                            "val": {
+                              "string": "COFFEE-ETH-001"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "timestamp"
+                            },
+                            "val": {
+                              "u64": 0
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "has_more"
+                  },
+                  "val": {
+                    "bool": false
+                  }
+                },
+                {
+                  "key": {
+                    "symbol": "total_count"
+                  },
+                  "val": {
+                    "u64": 2
                   }
                 }
               ]

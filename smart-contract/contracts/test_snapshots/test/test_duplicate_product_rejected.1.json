@@ -1,6 +1,6 @@
 {
   "generators": {
-    "address": 3,
+    "address": 2,
     "nonce": 0
   },
   "auth": [
@@ -17,19 +17,6 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "string": "Test Product"
-                },
-                {
-                  "string": "Description"
-                },
-                {
-                  "string": "Origin"
-                },
-                {
-                  "string": "Category"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -85,7 +72,6 @@
                   "symbol": "Auth"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -109,7 +95,6 @@
                       "symbol": "Auth"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     },
                     {
@@ -138,7 +123,6 @@
                   "symbol": "Product"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 }
               ]
@@ -159,7 +143,6 @@
                       "symbol": "Product"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     }
                   ]
@@ -180,7 +163,6 @@
                         "symbol": "category"
                       },
                       "val": {
-                        "string": "Category"
                         "string": "Coffee"
                       }
                     },
@@ -213,7 +195,6 @@
                         "symbol": "description"
                       },
                       "val": {
-                        "string": "Description"
                         "string": "Premium single-origin coffee"
                       }
                     },
@@ -222,7 +203,6 @@
                         "symbol": "id"
                       },
                       "val": {
-                        "string": "PROD-01"
                         "string": "COFFEE-ETH-001"
                       }
                     },
@@ -239,7 +219,6 @@
                         "symbol": "name"
                       },
                       "val": {
-                        "string": "Test Product"
                         "string": "Organic Coffee Beans"
                       }
                     },
@@ -254,7 +233,6 @@
                               "symbol": "location"
                             },
                             "val": {
-                              "string": "Origin"
                               "string": "Yirgacheffe, Ethiopia"
                             }
                           }
@@ -296,7 +274,6 @@
                   "symbol": "ProductEventIds"
                 },
                 {
-                  "string": "PROD-01"
                   "string": "COFFEE-ETH-001"
                 }
               ]
@@ -317,7 +294,6 @@
                       "symbol": "ProductEventIds"
                     },
                     {
-                      "string": "PROD-01"
                       "string": "COFFEE-ETH-001"
                     }
                   ]
@@ -446,19 +422,6 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "string": "Test Product"
-                },
-                {
-                  "string": "Description"
-                },
-                {
-                  "string": "Origin"
-                },
-                {
-                  "string": "Category"
                   "string": "COFFEE-ETH-001"
                 },
                 {
@@ -636,7 +599,6 @@
                 "symbol": "register_product"
               }
             ],
-            "data": "void"
             "data": {
               "map": [
                 {
@@ -766,33 +728,37 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "add_tracking_event"
+                "symbol": "register_product"
               }
             ],
             "data": {
               "vec": [
                 {
-                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
-                },
-                {
-                  "symbol": "EVENT"
                   "string": "COFFEE-ETH-001"
                 },
                 {
-                  "symbol": "HARVEST"
+                  "string": "Duplicate"
                 },
                 {
-                  "string": "Farm"
-                },
-                {
-                  "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
-                },
-                {
-                  "string": "Event Note"
                   "string": ""
+                },
+                {
+                  "string": "Somewhere"
+                },
+                {
+                  "string": "Other"
+                },
+                {
+                  "vec": []
+                },
+                {
+                  "vec": []
+                },
+                {
+                  "vec": []
                 },
                 {
                   "map": []
@@ -816,12 +782,12 @@
                 "symbol": "fn_return"
               },
               {
-                "symbol": "add_tracking_event"
+                "symbol": "register_product"
               }
             ],
             "data": {
               "error": {
-                "contract": 3
+                "contract": 1
               }
             }
           }
@@ -842,7 +808,7 @@
               },
               {
                 "error": {
-                  "contract": 3
+                  "contract": 1
                 }
               }
             ],
@@ -867,7 +833,7 @@
               },
               {
                 "error": {
-                  "contract": 3
+                  "contract": 1
                 }
               }
             ],
@@ -877,32 +843,36 @@
                   "string": "contract try_call failed"
                 },
                 {
-                  "symbol": "add_tracking_event"
+                  "symbol": "register_product"
                 },
                 {
                   "vec": [
                     {
-                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                     },
                     {
-                      "string": "PROD-01"
-                    },
-                    {
-                      "symbol": "EVENT"
                       "string": "COFFEE-ETH-001"
                     },
                     {
-                      "symbol": "HARVEST"
+                      "string": "Duplicate"
                     },
                     {
-                      "string": "Farm"
-                    },
-                    {
-                      "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
-                    },
-                    {
-                      "string": "Event Note"
                       "string": ""
+                    },
+                    {
+                      "string": "Somewhere"
+                    },
+                    {
+                      "string": "Other"
+                    },
+                    {
+                      "vec": []
+                    },
+                    {
+                      "vec": []
+                    },
+                    {
+                      "vec": []
                     },
                     {
                       "map": []
