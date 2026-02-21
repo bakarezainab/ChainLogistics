@@ -212,7 +212,7 @@
                         "symbol": "category"
                       },
                       "val": {
-                        "string": "Coffee"
+                        "string": "Category"
                       }
                     },
                     {
@@ -276,7 +276,7 @@
                         "symbol": "name"
                       },
                       "val": {
-                        "string": "Organic Coffee Beans"
+                        "string": "Name"
                       }
                     },
                     {
@@ -290,7 +290,7 @@
                               "symbol": "location"
                             },
                             "val": {
-                              "string": "Yirgacheffe, Ethiopia"
+                              "string": "Origin"
                             }
                           }
                         ]
@@ -349,6 +349,51 @@
                   "vec": [
                     {
                       "symbol": "ProductEventIds"
+                    },
+                    {
+                      "string": "COFFEE-ETH-001"
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "vec": []
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "ProductEventTimestamps"
+                },
+                {
+                  "string": "COFFEE-ETH-001"
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "ProductEventTimestamps"
                     },
                     {
                       "string": "COFFEE-ETH-001"
@@ -616,7 +661,7 @@
                     "symbol": "category"
                   },
                   "val": {
-                    "string": "Coffee"
+                    "string": "Category"
                   }
                 },
                 {
@@ -680,7 +725,7 @@
                     "symbol": "name"
                   },
                   "val": {
-                    "string": "Organic Coffee Beans"
+                    "string": "Name"
                   }
                 },
                 {
@@ -694,7 +739,7 @@
                           "symbol": "location"
                         },
                         "val": {
-                          "string": "Yirgacheffe, Ethiopia"
+                          "string": "Origin"
                         }
                       }
                     ]
@@ -753,7 +798,7 @@
                     "symbol": "category"
                   },
                   "val": {
-                    "string": "Coffee"
+                    "string": "Category"
                   }
                 },
                 {
@@ -817,7 +862,7 @@
                     "symbol": "name"
                   },
                   "val": {
-                    "string": "Organic Coffee Beans"
+                    "string": "Name"
                   }
                 },
                 {
@@ -831,7 +876,7 @@
                           "symbol": "location"
                         },
                         "val": {
-                          "string": "Yirgacheffe, Ethiopia"
+                          "string": "Origin"
                         }
                       }
                     ]
